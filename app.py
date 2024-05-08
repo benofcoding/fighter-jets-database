@@ -24,4 +24,13 @@ def print_all_aircraft():
 
 
 #main code
-print_all_aircraft()
+while True:
+    #ask the user what to do
+    user_input = input("What would you like to do. \n1. Print all aircraft\n2. Exit\n") 
+    #does what user said
+    if user_input == "1":
+        print_all_aircraft()
+    if user_input == "2":
+        break
+    else:
+        print("thats not an option\n")
